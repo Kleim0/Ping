@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    --white: 240, 246, 240;
+    --black: 44, 45, 45;
+    --darker: 30, 31, 31;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(var(--black));
+    font-family: "Consolas","Open Sans";
+}
+
+#start {
+    position: absolute;
+    padding: 25px;
+    background-color: rgba(var(--darker), .75);
+    user-select: none;
+    color: #f0f6f0;
+    border-radius: 4px;
+
+    transition-delay: 20ms;
+    transition-duration: 300ms;
+}
+
+#start:hover {
+    box-shadow: rgba(var(--darker)) 0 0 0 4px;
+}
+
+#canvas {
+    background-color: rgba(var(--black));
+    border: 3px solid rgba(var(--darker));
+}
